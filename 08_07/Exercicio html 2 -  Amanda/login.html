@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            color: #0080c0;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .input-group input[type="email"],
+        .input-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #0080c0;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #0070a0;
+        }
+
+        .login-form p {
+            text-align: center;
+            color: #333;
+        }
+
+        .login-form p a {
+            color: #0080c0;
+            text-decoration: none;
+        }
+
+        .login-form p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="email">Seu e-mail</label>
+                <input type="email" id="email" name="email" placeholder="contato@htmlcsspro.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Sua senha</label>
+                <input type="password" id="password" name="password" placeholder="1234" required>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Manter-me logado</label>
+            </div>
+            <button type="submit">Logar</button>
+            <p><a href="#">Ainda não tem conta? Cadastre-se</a></p>
+        </form>
+    </div>
+</body>
+</html>
